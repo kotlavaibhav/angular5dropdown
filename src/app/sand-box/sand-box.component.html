@@ -1,0 +1,18 @@
+<div class="container">
+  <div style="width: 300px; margin-bottom: 20px;">
+
+    <h3>Select Movies</h3>
+     <ng-select [items]="results"
+                    [addTag]="true"
+                   bindLabel="title"
+                   placeholder="Search for movies"
+                   [typeahead]="typeahead"
+                   [(ngModel)]="selectedMovie">
+          
+        </ng-select>
+    <p></p>
+    <pre>{{selectedMovie}}</pre>
+  
+  </div>
+ 
+</div>
